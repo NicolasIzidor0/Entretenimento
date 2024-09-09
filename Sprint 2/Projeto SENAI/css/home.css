@@ -68,9 +68,9 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 30px;
     text-align: center;
     color: aliceblue;
     background-color: #76FFC6;
-    height: 35px;
+    height: 150px;
+    
 }

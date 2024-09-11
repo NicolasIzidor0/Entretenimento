@@ -104,17 +104,17 @@ nav ul li:hover {
 
 .cards-home img {
     margin-left: 50px;
-    width: 180px;
+    width: 250px;
 }
 
 .card-produto {
     display: flex;
     flex-direction: column;
     /*forma atual de declarar alinhamento*/
-    width: 250px;
+    width: 200px;
     height: 450px;
-    margin-top: 20px;
-    margin-left: 10px;
+    margin-top: 40px;
+    margin-left: 20px;
     align-self: center;
     flex-grow: 1;
 }
@@ -174,4 +174,29 @@ footer {
 
 .cor-azul {
     background-color: blue;
+<<<<<<< HEAD
 }
+.texto-maiusculo{
+    margin: 8px;
+    margin-left: 5%;
+    font-size: larger;
+}
+
+.centralizado{
+    height: 5%;
+    margin-left: 4%;
+   margin-right: 1%;
+   margin: 5px;
+   display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+.flex{
+    display: flex;
+}
+=======
+}
+>>>>>>> b426dfa715e371a3d1b134d6cf60747b28a29289

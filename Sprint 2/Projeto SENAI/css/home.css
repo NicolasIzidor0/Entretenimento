@@ -93,6 +93,7 @@ nav ul li:hover {
 .principal {
     min-height: 100vh;
     margin: 0% 1% 0% 1%;
+    display: flex;
 }
 
 .cards-home {
@@ -100,10 +101,12 @@ nav ul li:hover {
     width: 100%;
     height: 500px;
 }
+
 .cards-home img {
     margin-left: 50px;
     width: 180px;
 }
+
 .card-produto {
     display: flex;
     flex-direction: column;
@@ -117,37 +120,37 @@ nav ul li:hover {
 }
 
 .card-produto-descricao {
-    /*font-size: 18px;*/
-    /*Tamanho da fonte*/
     line-height: 22px;
-    /*Altura da linha*/
     height: 66px;
-    /*Altura*/
     overflow: hidden;
-    /*Esconder a parte que ultrapassar o layout*/
     text-overflow: ellipsis;
-    /*Esconder a parte que ultrapassar a area visivel*/
     display: -webkit-box;
-    /*Forma antiga de declarar o dysplay flex*/
     -webkit-line-clamp: 3;
-    /*Define a quantidade de linhas disponivel para o texto*/
     -webkit-box-orient: vertical;
-    /*forma antiga de declarar alinhamento vertical*/
     color: #42264D;
     font-weight: 900;
-    /*Preenchimento*/
+}
+
+.borda-direita {
+    border-right: 1px solid #e8e5e5;
+    border-radius: 3%;
+}
+
+.borda-esquerda {
+    border-left: 1px solid #e8e5e5;
+    border-radius: 3%;
 }
 
 .imagem-coluna {
     min-height: 100vh;
-    width: 20%;
+    width: 100%;
 }
 
 .imagem-produto {
     left: 100%;
 }
 
- .rodape {
+.rodape {
     margin-left: 10%;
     margin-right: 10%;
     color: black;
@@ -170,5 +173,5 @@ footer {
 }
 
 .cor-azul {
-   
+    background-color: blue;
 }

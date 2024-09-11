@@ -8,6 +8,9 @@
     <meta name="author" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/contato.css">
+    <link rel="stylesheet" href="css/boxicons/css/boxicons.min.css">
+    <link rel="stylesheet" href="css/flag-icons/css/flag-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/7.2.3/css/flag-icons.min.css" />
     <title>Pagina Contato</title>
 </head>
 
@@ -15,7 +18,7 @@
     <header class="cabecalho">
         <div class="caixa-esquerda">
             <div class="area-logo">
-                <img src="img/Logotipo-UpViagens.png" alt="Logo UpViagens">
+                <img class="logo" src="img/Logotipo-UpViagens.png" alt="Logo UpViagens">
             </div>
         </div>
         <div class="container-coluna">
@@ -23,10 +26,10 @@
         </div>
         <div class="caixa-direita pesquisa">
             <ul class="">
-                <li> <a href="#" target="_blank"><i class=''></i></a>icone gmail</li>
-                <li> <a href="#" target="_blank"><i class=''></i></a>icone facebook</li>
-                <li> <a href="#" target="_blank"><i class=''></i></a>icone instagram</li>
-                <li> <a href="#" target="_blank"><i class=''></i></a>acesso</li>
+                <li> <a href="#" target="_blank"><i class='bx bx-envelope bx-md'></i></a></li>
+                <li> <a href="#" target="_blank"><i class='bx bxl-facebook-square bx-md'></i></a></li>
+                <li> <a href="#" target="_blank"><i class='bx bxl-instagram-alt bx-md'></i></a></li>
+                <li> <a href="#" target="_blank">acesso</a></li>
             </ul>
         </div>
 
@@ -42,36 +45,18 @@
 
     </nav>
     <main class="principal">
+
         <section>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque dolorem reiciendis neque veniam
-                obcaecati doloribus voluptatem, fuga omnis consequuntur expedita, odio praesentium facilis quas. Totam,
-                ut non itaque cupiditate aut dolorem qui perspiciatis laudantium dolore voluptate commodi doloremque,
-                sapiente reprehenderit odio eaque nesciunt quibusdam accusamus sunt, repellat laborum numquam magnam.
-            </p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque dolorem reiciendis neque veniam
-                obcaecati doloribus voluptatem, fuga omnis consequuntur expedita, odio praesentium facilis quas. Totam,
-                ut non itaque cupiditate aut dolorem qui perspiciatis laudantium dolore voluptate commodi doloremque,
-                sapiente reprehenderit odio eaque nesciunt quibusdam accusamus sunt, repellat laborum numquam magnam.
-            </p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque dolorem reiciendis neque veniam
-                obcaecati doloribus voluptatem, fuga omnis consequuntur expedita, odio praesentium facilis quas. Totam,
-                ut non itaque cupiditate aut dolorem qui perspiciatis laudantium dolore voluptate commodi doloremque,
-                sapiente reprehenderit odio eaque nesciunt quibusdam accusamus sunt, repellat laborum numquam magnam.
-            </p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque dolorem reiciendis neque veniam
-                obcaecati doloribus voluptatem, fuga omnis consequuntur expedita, odio praesentium facilis quas. Totam,
-                ut non itaque cupiditate aut dolorem qui perspiciatis laudantium dolore voluptate commodi doloremque,
-                sapiente reprehenderit odio eaque nesciunt quibusdam accusamus sunt, repellat laborum numquam magnam.
-            </p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque dolorem reiciendis neque veniam
-                obcaecati doloribus voluptatem, fuga omnis consequuntur expedita, odio praesentium facilis quas. Totam,
-                ut non itaque cupiditate aut dolorem qui perspiciatis laudantium dolore voluptate commodi doloremque,
-                sapiente reprehenderit odio eaque nesciunt quibusdam accusamus sunt, repellat laborum numquam magnam.
-            </p>
+            <label for="email">E-mail:</label>
+            <input type="email" name="email" id="email">
+            <label for="duvidas"></label>
+            <input type="url" name="duvidas" id="duvidas">
+
         </section>
+
         <section></section>
     </main>
-    <footer >
+    <footer>
         <div class="rodape">
             <p>Parceiros</p>
             <p>Universal</p>
@@ -83,9 +68,9 @@
             <p>MasterCard</p>
         </div>
         <div class="rodape">
-            <p>ARS <a href=""></a> R$ 0</p>
-            <p>EUR<a href=""></a> R$ 6,67</p>
-            <p>USA<a href=""></a> R$ 5,61</p>
+            <p>ARS<span class="fi fi-ar"></span>R$ 0</p>
+            <p>EUR <span class="fi fi-eu"></span> R$ 6,67</p>
+            <p>USA <span class="fi fi-us"></span> R$ 5,61</p>
         </div>
 
     </footer>

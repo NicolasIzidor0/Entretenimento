@@ -50,9 +50,12 @@ nav ul li:hover {
 }
 
 .area-logo {
-    margin: 3% 0 0 8%;
+    margin: 3% 0 0 10%;
     width: 30%;
-    height: 80px;
+    height: 120px;
+}
+.logo{
+    height: 120px;
 }
 
 .pesquisa {

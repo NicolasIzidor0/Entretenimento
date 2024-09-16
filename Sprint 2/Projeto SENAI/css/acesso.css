@@ -105,10 +105,16 @@ nav ul li:hover {
 .divisao-formulario{
     margin-left: 60%;
 }
+.espaçamento{
+    margin: 20px 0 0 20px;
+}
 .rodape {
     margin-left: 10%;
     margin-right: 10%;
     color: black;
+}
+.enviar{
+    margin-left: 77%;
 }
 
 footer {

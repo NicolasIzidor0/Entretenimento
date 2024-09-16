@@ -46,26 +46,29 @@
     <main class="principal">
         <section>
 
-            <form class="formulario" action="" method="post">
+            <form class="formulario" action="post">
                 <div>
                     <h3>Informações pessoais</h3>
-                    <input type="text" name="pnome" id="pnome" placeholder="Primeiro Nome"><br>
-                    <input type="text" name="unome" id="unome" placeholder="Ultimo nome"><br>
-                    <input type="date" name="datanascimento" id="datanascimento"><br>
-                    <input type="text" name="genero" id="gnero" placeholder="Gênero"><br>
-                    <input type="text" name="nacionalidade" id="nacionalidade" placeholder="Nacionalidade">
+                    <input class="espaçamento" type="text" name="pnome" id="pnome" placeholder="Primeiro Nome"><br>
+                    <input class="espaçamento" type="text" name="unome" id="unome" placeholder="Ultimo nome"><br>
+                    <input class="espaçamento" type="date" name="datanascimento" id="datanascimento"><br>
+                    <input class="espaçamento" type="text" name="genero" id="gnero" placeholder="Gênero"><br>
+                    <input class="espaçamento" type="text" name="nacionalidade" id="nacionalidade"
+                        placeholder="Nacionalidade">
                 </div>
                 <div class="divisao-formulario">
                     <h3>Documento e Informações</h3>
-                    <input type="text" name="cpf" id="cpf" placeholder="CPF"><br>
-                    <input type="tel" name="telefone" id="telefone" placeholder="Telefone"><br>
-                    <input type="email" name="email" id="email" placeholder="E-mail"><br>
-                    <input type="email" name="confirmemail" id="confirmemail" placeholder="Confirme seu E-mail"><br>
-                    <input type="password" name="senha" id="senha" placeholder="Senha"><br>
-                    <input type="password" name="confirmsenha" id="confirmsenha" placeholder="Confirme Sua Senha">
-
+                    <input class="espaçamento" type="text" name="cpf" id="cpf" placeholder="CPF" maxlength="11"><br>
+                    <input class="espaçamento" type="tel" name="telefone" id="telefone" placeholder="Telefone"><br>
+                    <input class="espaçamento" type="email" name="email" id="email" placeholder="E-mail"><br>
+                    <input class="espaçamento" type="email" name="confirmemail" id="confirmemail"placeholder="Confirme seu E-mail"><br>
+                        
+                    <input class="espaçamento" type="password" name="senha" id="senha" placeholder="Senha"><br>
+                    <input class="espaçamento" type="password" name="confirmsenha" id="confirmsenha"
+                        placeholder="Confirme Sua Senha"><br>
                 </div>
             </form>
+            <a class="enviar" href='home.html'><button>Enviar</button></a>
         </section>
     </main>
     <footer>

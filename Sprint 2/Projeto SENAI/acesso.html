@@ -9,8 +9,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/acesso.css">
     <link rel="stylesheet" href="css/boxicons/css/boxicons.min.css">
-    <link rel="stylesheet" href="css/flagicons/flag-icons.min.css">
-    <title>Pagina Contato</title>
+    <link rel="stylesheet" href="css/flag-icons/flag-icons.min.css">
+    <title>Pagina Acesso</title>
 </head>
 
 <body>
@@ -28,7 +28,7 @@
                 <li> <a href="#" target="_blank"><i class='bx bx-envelope bx-md'></i></a></li>
                 <li> <a href="#" target="_blank"><i class='bx bxl-facebook-square bx-md'></i></a></li>
                 <li> <a href="#" target="_blank"><i class='bx bxl-instagram-alt bx-md'></i></a></li>
-                <li> <a href="acesso.html" target="_blank">acesso</a></li>
+                <li> <a href="#">acesso</a></li>
             </ul>
         </div>
 
@@ -36,7 +36,7 @@
     </header>
     <nav>
         <ul>
-            <li><a href="#">Home</a></li>
+            <li><a href="home.html">Home</a></li>
             <li><a href="servicos.html">Serviços</a></li>
             <li><a href="galeria.html">Galeria</a></li>
             <li><a href="contato.html">Contato</a></li>
@@ -44,7 +44,29 @@
 
     </nav>
     <main class="principal">
+        <section>
 
+            <form class="formulario" action="" method="post">
+                <div>
+                    <h3>Informações pessoais</h3>
+                    <input type="text" name="pnome" id="pnome" placeholder="Primeiro Nome"><br>
+                    <input type="text" name="unome" id="unome" placeholder="Ultimo nome"><br>
+                    <input type="date" name="datanascimento" id="datanascimento"><br>
+                    <input type="text" name="genero" id="gnero" placeholder="Gênero"><br>
+                    <input type="text" name="nacionalidade" id="nacionalidade" placeholder="Nacionalidade">
+                </div>
+                <div class="divisao-formulario">
+                    <h3>Documento e Informações</h3>
+                    <input type="text" name="cpf" id="cpf" placeholder="CPF"><br>
+                    <input type="tel" name="telefone" id="telefone" placeholder="Telefone"><br>
+                    <input type="email" name="email" id="email" placeholder="E-mail"><br>
+                    <input type="email" name="confirmemail" id="confirmemail" placeholder="Confirme seu E-mail"><br>
+                    <input type="password" name="senha" id="senha" placeholder="Senha"><br>
+                    <input type="password" name="confirmsenha" id="confirmsenha" placeholder="Confirme Sua Senha">
+
+                </div>
+            </form>
+        </section>
     </main>
     <footer>
         <div class="rodape">
@@ -58,7 +80,7 @@
             <p>MasterCard</p>
         </div>
         <div class="rodape">
-            <p>ARS <i class='fi fi-ar'></i> R$ 0</p>
+            <p>ARS <i class="fi fi-ar"></i> R$ 0</p>
             <p>EUR <i class="fi fi-eu"></i> R$ 6,67</p>
             <p>USA <i class="fi fi-us"></i> R$ 5,61</p>
         </div>

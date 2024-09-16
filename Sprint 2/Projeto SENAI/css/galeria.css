@@ -1,0 +1,17 @@
+.rodape {
+    margin-left: 10%;
+    margin-right: 10%;
+    color: black;
+}
+
+footer {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: aliceblue;
+    background-color: #76FFC6;
+    height: 150px;
+
+}

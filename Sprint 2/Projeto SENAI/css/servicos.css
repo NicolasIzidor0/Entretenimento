@@ -69,6 +69,12 @@ nav ul li:hover {
 
 }
 
+.rodape {
+    margin-left: 10%;
+    margin-right: 10%;
+    color: black;
+}
+
 footer {
 
     display: flex;

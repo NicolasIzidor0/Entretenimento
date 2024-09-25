@@ -1,1 +1,1 @@
-# Entreterimento
+# Entretenimento

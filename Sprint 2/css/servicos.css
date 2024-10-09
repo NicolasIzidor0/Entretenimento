@@ -90,14 +90,25 @@ nav ul li:hover {
     height: 150px;
 }
 
+.icones{
+    font-size: larger;
+}
+.icones a{
+    text-decoration: none;
+    color: #000000;
+}
+.icones i {
+    color: #000000;
+}
 .principal {
     min-height: 100vh;
     margin: 0% 1% 0% 1%;
 
 }
+
 .cidades-recomendadas {
     min-height: 400px;
-    margin: 0px 20px 0px 20px;
+    margin: 30px 20px 0px 20px;
     display: flex;
 }
 
@@ -119,9 +130,14 @@ nav ul li:hover {
     text-align: center;
 }
 
+.item-cidades-recomendadas img {
+    height: 150px;
+    width: 100%
+
+}
+
 .item-cidades-recomendadas a {
-    color: #FF6500;
-    text-decoration: none;
+    width: 100%;
 }
 
 /*Quando é passado o mouse em cima do link aplica as propriedades abaixo*/

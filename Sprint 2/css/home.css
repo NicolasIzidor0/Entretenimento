@@ -100,6 +100,11 @@ nav ul li:hover {
     display: flex;
     width: 80%;
     height: 550px;
+    flex-direction: row;
+}
+
+.cards-home h2{
+    -ms-flex-direction: column;
 }
 
 .cards-home img {
@@ -107,7 +112,14 @@ nav ul li:hover {
     width: 300px;
 }
 
+.Ofertas{
+text-align: center;
+height: 30px;
+margin-left: 400px;
+}
+
 .card-produto {
+    text-align: center;
     display: flex;
     flex-direction: column;
     /*forma atual de declarar alinhamento*/
@@ -117,6 +129,8 @@ nav ul li:hover {
     margin-left: 20px;
     align-self: center;
     flex-grow: 1;
+    text-align: center;
+    font-size: 25px;
 }
 
 .card-produto-descricao {
@@ -147,7 +161,7 @@ nav ul li:hover {
 }
 
 .imagem-produto {
-    left: 100%;
+    width: 350px;
 }
 
 .rodape {

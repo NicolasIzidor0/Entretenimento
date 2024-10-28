@@ -53,6 +53,7 @@ contato
       id - int(11) 
       email - varchar(100)
       observacao - text
+      FOREIGN KEY(empresa_id) REFERENCES empresa(id)
 
 
 empresa
@@ -62,11 +63,14 @@ empresa
       CNPJ - char(18)
       telefone - char(11)
       endereco - varchar(100)
-      responsavel_Id - (11)      
+      responsavel_id - (11)
+      pacote_id int (11) NOT NULL
+      cliente_id int (11) NOT NULL
+      FOREIGN KEY(pacote_id) REFERENCES pacote(id)
        
 
 pacote 
-     pacote_id - int(11)
+     id - int(11)
      id - int(11)
      destino - varchar(50)
      valor - varchar(50)

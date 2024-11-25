@@ -43,8 +43,43 @@ CREATE TABLE pacote (
 CREATE TABLE clientes_bkp_25112024_NIG SELECT * FROM clientes;
 
 ALTER TABLE contato(
-ADD COLUMN cliente_id int(11) NOT NULL,
-    FOREIGN KEY (cliente_id) REFERENCES clientes(id)
-ADD COLUMN empresa_id int(11) NOT NULL,
-    FOREIGN KEY (empresa_id) REFERENCES empresa(id)
+    ADD COLUMN cliente_id int(11) NOT NULL,
+    ADD FOREIGN KEY (cliente_id) REFERENCES clientes(id)
+    ADD COLUMN empresa_id int(11) NOT NULL,
+    ADD FOREIGN KEY (empresa_id) REFERENCES empresa(id)
 )
+
+ALTER TABLE pacote {
+    ADD COLUMN empresa_id int(11) NOT NULL,
+    ADD FOREIGN KEY (empresa_id) REFERENCES empresa(id)
+}
+
+CREATE TABLE compra(
+    id int(11) PRIMARY KEY AUTO_INCREMENT,
+    pacote_id int(11) NOT NULL,
+    data_ida DATETIME,
+    data_volta DATETIME,
+    data_compra DATETIME,
+    valor decimal(10, 2),
+    FOREIGN KEY(pacote_id) REFERENCES pacote(id)
+    );
+
+    ALTER TABLE compra
+ADD COLUMN cliente_id int(11) NOT NULL,
+ADD FOREIGN KEY (cliente_id) REFERENCES clientes(id)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

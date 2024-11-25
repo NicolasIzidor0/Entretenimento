@@ -7,6 +7,7 @@
     <meta name="keywords" content="">
     <meta name="author" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/custom.css">
     <link rel="stylesheet" href="css/acesso.css">
     <link rel="stylesheet" href="css/boxicons/css/boxicons.min.css">
     <link rel="stylesheet" href="css/flag-icons/flag-icons.min.css">
@@ -24,11 +25,11 @@
 
         </div>
         <div class="caixa-direita pesquisa">
-            <ul class="">
-                <li> <a href="#" target="_blank"><i class='bx bx-envelope bx-md'></i></a></li>
-                <li> <a href="#" target="_blank"><i class='bx bxl-facebook-square bx-md'></i></a></li>
-                <li> <a href="#" target="_blank"><i class='bx bxl-instagram-alt bx-md'></i></a></li>
-                <li> <a href="#">acesso</a></li>
+            <ul class="icones">
+                <li> <a href="#" target="_blank"><i class='bx bx-envelope bx-md color-black'></i></a></li>
+                <li> <a href="#" target="_blank"><i class='bx bxl-facebook-square bx-md color-black'></i></a></li>
+                <li> <a href="#" target="_blank"><i class='bx bxl-instagram-alt bx-md color-black'></i></a></li>
+                <li> <a class="color-black" href="acesso.html">acesso</a></li>
             </ul>
         </div>
 
@@ -45,51 +46,67 @@
     </nav>
     <main class="principal">
         <section>
-
-            <form class="formulario" action="post">
-                <div>
-                    <h3>Informações pessoais</h3>
-                    <input class="espaçamento" type="text" name="pnome" id="pnome" placeholder="Primeiro Nome"><br>
-                    <input class="espaçamento" type="text" name="unome" id="unome" placeholder="Ultimo nome"><br>
-                    <input class="espaçamento" type="date" name="datanascimento" id="datanascimento"><br>
-                    <input class="espaçamento" type="text" name="genero" id="gnero" placeholder="Gênero"><br>
-                    <input class="espaçamento" type="text" name="nacionalidade" id="nacionalidade"
-                        placeholder="Nacionalidade">
+            <form method="post">
+                <div class="formulario1">
+                    <h2 class="h2">Informações Pessoais:</h2>
+                    <input class="espaçamento tamanhoGrande" type="text" size="15" name="pnome" id="pnome"
+                        placeholder="Primeiro Nome" required><br>
+                    <input class="espaçamento tamanhoGrande" type="text" name="snome" id="snome"
+                        placeholder="Último Sobrenome segundo o documento" required><br>
+                    <div class="inputDuplo">
+                        <input class="espaçamento tamanhoPequeno" type="date" name="data" id="data"><br>
+                        <input class="espaçamento tamanhoPequeno" type="" name="gen" id="gen" placeholder="Gênero"
+                            required><br>
+                    </div>
+                    <input class="espaçamento tamanhoGrande" type="text" name="nac" id="nac" placeholder="Nacionalidade"
+                        required><br>
                 </div>
-                <div class="divisao-formulario">
-                    <h3>Documento e Informações</h3>
-                    <input class="espaçamento" type="text" name="cpf" id="cpf" placeholder="CPF" maxlength="11"><br>
-                    <input class="espaçamento" type="tel" name="telefone" id="telefone" placeholder="Telefone"><br>
-                    <input class="espaçamento" type="email" name="email" id="email" placeholder="E-mail"><br>
-                    <input class="espaçamento" type="email" name="confirmemail" id="confirmemail" placeholder="Confirme seu E-mail"><br>
-                        
-                    <input class="espaçamento" type="password" name="senha" id="senha" placeholder="Senha"><br>
-                    <input class="espaçamento" type="password" name="confirmsenha" id="confirmsenha"
-                        placeholder="Confirme Sua Senha"><br>
+                <div class="formulario2">
+                    <h2>Informações Pessoais:</h2>
+                    <input class="espaçamento tamanhoGrande" type="text" name="cpf" id="cpf" size="11" maxlength="11"
+                        minlength="11" placeholder="CPF" required><br>
+                    <div class="inputDuplo">
+                        <input class="espaçamento tamanhoPequeno" type="text" name="ddi" id="ddi" placeholder="DDI"
+                            required><br>
+                        <input class="espaçamento tamanhoPequeno" type="tel" name="tcelular" id="tcelular"
+                            placeholder="Telefone Celular" required><br>
+                    </div>
+                    <input class="espaçamento tamanhoGrande" type="email" name="email" id="email" placeholder="E-mail"
+                        required><br>
+                    <input class="espaçamento tamanhoGrande" type="email" name="cemail" id="cemail"
+                        placeholder="Confirme seu E-mail" required><br>
+                    <div class="inputDuplo">
+                        <input class="espaçamento tamanhoPequeno" type="password" name="senha" id="senha"
+                            placeholder="Senha" required><br>
+                        <!--<button class="espaçamento" type="submit"><a href="index.html"></a></button>-->
+                        <a href="index.html"><input type="submit" value="enviar"></a>
+                    </div>
                 </div>
             </form>
-            <!--<a class="enviar" href='home.html'><button>Enviar</button></a>-->
-            <input type="submit" value="enviar">
         </section>
     </main>
     <footer>
         <div class="rodape">
-            <p>Parceiros</p>
-            <p>Universal</p>
+            <h4>Parceiros</h4>
+            <h4>Universal</h4>
         </div>
         <div class="rodape">
-            <p>Credito</p>
-            <p>Visa elo</p>
-            <p>HiperCard</p>
-            <p>MasterCard</p>
+            <h3>Formas de pagamento</h3>
+            <h4>Credito</h4>
+            <h4>Visa elo</h4>
+            <h4>HiperCard</h4>
+            <h4>MasterCard</h4>
         </div>
         <div class="rodape">
-            <p>ARS <i class="fi fi-ar"></i> R$ 0</p>
-            <p>EUR <i class="fi fi-eu"></i> R$ 6,67</p>
-            <p>USA <i class="fi fi-us"></i> R$ 5,61</p>
+            <h4>ARS <i class="fi fi-ar"></i> R$ 0</h4>
+            <h4>EUR <i class="fi fi-eu"></i> R$ 6,67</h4>
+            <h4>USA <i class="fi fi-us"></i> R$ 5,61</h4>
         </div>
+
+
 
     </footer>
 </body>
 
 </html>
+

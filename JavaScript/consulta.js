@@ -1,4 +1,5 @@
-document.getElementById('LoginForm').addEventListener('submit', function(event){
+document.getElementById('ConsultaForm').addEventListener('submit',function(event){
+    event.preventDefault();
 
     //obter os valores digitados pelo ususario no forms de login
     const email = document.getElementById('email').value;

@@ -34,34 +34,4 @@ const routers = express.Router();
         }
     });
 
-routers.post('/api/login',async(req,res)=>{
-    const {email,senha} = req.body
-
-    const sql = "SELECT * FROM alunos WHERE email = ?"
-
-    try{
-        const [rows] = await connection.promise().query(sql,[email]);
-
-        console.log(rows[0].sobrenome)
-
-        if(rows.length > 0){
-            const match = await bcrypt.compare(senha,rows[0].senha);
-
-            if(match){
-                res.status(200).json({msg:"Sucesso", nome:rows[0].nome})
-            }
-            else{
-                res.status(401).json({msg:"Email ou senha incorretos"})
-            }
-        }
-        else{
-            res.status(400).json({msg:"Erro"})
-        }
-
-    }
-    catch(erro){
-        console.log(erro)
-    }
-})
-
     module.exports = routers;
